@@ -1,1 +1,1 @@
-## RabbitMQ witn Express simple example (subscribeToQueue, publishToQueue)
+## RabbitMQ witn Express simple example
