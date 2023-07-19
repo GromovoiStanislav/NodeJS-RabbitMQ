@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "consumer"
+		},
+		{
+			"path": "consumer_express"
+		},
+		{
+			"path": "consumer_nest"
+		},
+		{
+			"path": "producer_nest"
+		}
+	],
+	"settings": {}
+}
