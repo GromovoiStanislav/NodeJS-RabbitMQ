@@ -1,10 +1,12 @@
-import { Injectable } from '@nestjs/common';
-import * as amqp from 'amqplib';
+import { Injectable } from "@nestjs/common";
+import * as amqp from "amqplib";
 
 @Injectable()
-export class RabbitmqService {
+export class RabbitMQService {
+
   private connection: amqp.Connection;
   private channel: amqp.Channel;
+
 
   async init() {
     try {
@@ -15,22 +17,25 @@ export class RabbitmqService {
       // Пример декларации обменника:
       //await this.channel.assertExchange(exchangeName, 'fanout');
     } catch (error) {
-      throw new Error('Ошибка при подключении к RabbitMQ');
+      throw new Error("Ошибка при подключении к RabbitMQ");
     }
   }
+
 
   async sendMessageToExchange(exchangeName: string, routingKey: string, message: any) {
     try {
       // Публикация сообщения в обменник
-      this.channel.publish(exchangeName, routingKey, Buffer.from(JSON.stringify(message)));
+      this.channel.publish(exchangeName, routingKey, Buffer.from(message));
       console.log(`Сообщение отправлено в обменник ${exchangeName} с ключом маршрутизации ${routingKey}`);
     } catch (error) {
-      throw new Error('Ошибка при отправке сообщения в обменник');
+      throw new Error("Ошибка при отправке сообщения в обменник");
     }
   }
+
 
   async closeConnection() {
     await this.channel.close();
     await this.connection.close();
   }
+
 }

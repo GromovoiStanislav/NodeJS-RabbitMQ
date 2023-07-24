@@ -5,3 +5,4 @@
 - 3 - RabbitMQ simple example
 - 4 - RabbitMQ (exchange) witn NestJS, Express, simple
 - 5 - RabbitMQ witn NestJS, Express, simple
+- 6 - Implementation of RabbitMQ (exchange) in NestJS
