@@ -2,7 +2,7 @@ import { Injectable } from "@nestjs/common";
 import * as amqp from "amqplib";
 
 @Injectable()
-export class RabbitMQService {
+export class RabbitmqService {
 
   private connection: amqp.Connection;
   private channel: amqp.Channel;
