@@ -2,11 +2,14 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from "@nestjs/config";
-import { RabbitMQService } from "./rabbitmq.service";
+import { RabbitMQModule } from './rabbitmq/rabbitmq.module';
 
 @Module({
-  imports: [ConfigModule.forRoot()],
+  imports: [
+    ConfigModule.forRoot(),
+    RabbitMQModule
+  ],
   controllers: [AppController],
-  providers: [AppService, RabbitMQService],
+  providers: [AppService ],
 })
 export class AppModule {}

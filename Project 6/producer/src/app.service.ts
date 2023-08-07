@@ -1,18 +1,18 @@
-import { Injectable, OnModuleInit } from "@nestjs/common";
-import { RabbitMQService } from './rabbit-m-q.service';
+import { Injectable } from "@nestjs/common";
+import { RabbitMQService } from "./rabbitmq/rabbitmq.service";
 
 @Injectable()
-export class AppService implements OnModuleInit {
+export class AppService {
 
-  constructor(private readonly rabbitMQService: RabbitMQService) {}
+  constructor(
+    private readonly rabbitMQService: RabbitMQService) {
+  }
 
-  onModuleInit() {
-    this.rabbitMQService.init();
+  getHello(body: any): string {
+    //this.rabbitMQService.sendMessageToExchange( "multicasting_exchange", "", body);
+    this.rabbitMQService.sendMessageToQueue("tasks", body);
+    return "Hello World!";
   }
 
 
-   getHello(): string {
-    this.rabbitMQService.sendMessageToExchange( "multicasting_exchange", "", 'Hello World!');
-    return 'Hello World!';
-  }
 }
