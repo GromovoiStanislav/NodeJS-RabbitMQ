@@ -1,5 +1,5 @@
 const amqp = require('amqplib');
-const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5672';
+const config = require('./config');
 
 //step 1 : Connect to the rabbitmq server
 //step 2 : Create a new channel on that connection
@@ -10,7 +10,7 @@ class Producer {
   channel;
 
   async createChannel() {
-    const connection = await amqp.connect(amqpUrl);
+    const connection = await amqp.connect(config.rabbitMQ.url);
     this.channel = await connection.createChannel();
   }
 
@@ -19,7 +19,7 @@ class Producer {
       await this.createChannel();
     }
 
-    const exchangeName = 'logExchange';
+    const exchangeName = config.rabbitMQ.exchangeName;
     await this.channel.assertExchange(exchangeName, 'direct');
 
     const logDetails = {

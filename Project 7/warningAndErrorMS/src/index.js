@@ -1,6 +1,6 @@
 require('dotenv').config();
 const amqp = require('amqplib');
-const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5672';
+const config = require('./config');
 
 //step 1 : Connect to the rabbitmq server
 //step 2 : Create a new channel
@@ -10,14 +10,17 @@ const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5672';
 //step 6 : Consume messages from the queue
 
 async function consumeMessages() {
-  const connection = await amqp.connect(amqpUrl);
+  const connection = await amqp.connect(config.rabbitMQ.url);
   const channel = await connection.createChannel();
 
-  await channel.assertExchange('logExchange', 'direct');
+  await channel.assertExchange(config.rabbitMQ.exchangeName, 'direct');
 
-  const q = await channel.assertQueue('InfoQueue');
+  const q = await channel.assertQueue(
+    config.rabbitMQ.queues.warningAndErrorsQueue
+  );
 
-  await channel.bindQueue(q.queue, 'logExchange', 'Info');
+  await channel.bindQueue(q.queue, config.rabbitMQ.exchangeName, 'Warning');
+  await channel.bindQueue(q.queue, config.rabbitMQ.exchangeName, 'Error');
 
   channel.consume(q.queue, (msg) => {
     const data = JSON.parse(msg.content);
