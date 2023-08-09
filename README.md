@@ -7,3 +7,4 @@
 - 5 - RabbitMQ witn NestJS, Express, simple
 - 6 - Implementation of RabbitMQ (exchange) in NestJS
 - 7 - NodeJS microservices with RabbitMQ implementation of the direct exchange type
+- 8 - RabbitMQ example of the request-reply pattern using NodeJS (TS)
