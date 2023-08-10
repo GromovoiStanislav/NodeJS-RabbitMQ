@@ -15,8 +15,6 @@
   "devDependencies": {
     "@types/amqplib": "^0.10.1",
     "@types/express": "^4.17.17",
-    "i": "^0.3.7",
-    "npm": "^9.8.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
