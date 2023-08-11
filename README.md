@@ -6,6 +6,7 @@
 - 4 - RabbitMQ (exchange) witn NestJS, Express, simple
 - 5 - RabbitMQ witn NestJS, Express, simple
 - 6 - Implementation of RabbitMQ (exchange) in NestJS
-- 7 - NodeJS microservices with RabbitMQ implementation of the direct exchange type
-- 8 - RabbitMQ example of the request-reply pattern using NodeJS (TS)
+- 7 - NodeJS microservices with RabbitMQ implementation of the direct exchange type \*
+- 8 - RabbitMQ example of the request-reply pattern using NodeJS (TS) \*
 - 9 - Event-Driven Architecture with RabbitMQ (TS)
+- 10 - NodeJS RabbitMQ RPC (TS) \*
