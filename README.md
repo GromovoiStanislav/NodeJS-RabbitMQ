@@ -10,3 +10,4 @@
 - 8 - RabbitMQ example of the request-reply pattern using NodeJS (TS) \*
 - 9 - Event-Driven Architecture with RabbitMQ (TS)
 - 10 - NodeJS RabbitMQ RPC (TS) \*
+- 11 - NodeJS RabbitMQ RPC (TS)
