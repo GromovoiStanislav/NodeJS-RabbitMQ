@@ -11,3 +11,4 @@
 - 9 - Event-Driven Architecture with RabbitMQ (TS)
 - 10 - NodeJS RabbitMQ RPC (TS) \*
 - 11 - NodeJS RabbitMQ RPC (TS)
+- 12 - RabbitMQ witn Express simple Microservice
