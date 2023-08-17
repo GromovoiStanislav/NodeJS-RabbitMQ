@@ -83,13 +83,13 @@ app.get('/api/products', async (req: Request, res: Response) => {
 });
 
 app.post('/api/products/:id/like', async (req: Request, res: Response) => {
-  const product = await productRepository.findOneBy({ id: req.params.id });
-  await axios.post(
+  const product = await productRepository.findOneBy({ admin_id: parseInt(req.params.id)});
+  product.likes++;
+  await productRepository.save(product);
+    await axios.post(
     `http://localhost:3000/api/products/${product.admin_id}/like`,
     {}
   );
-  product.likes++;
-  await productRepository.save(product);
   return res.send(product);
 });
 
