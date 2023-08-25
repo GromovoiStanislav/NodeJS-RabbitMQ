@@ -1,0 +1,35 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "hello:receive": "node src/hello_world/receive.js",
+    "hello:send": "node src/hello_world/send.js",
+    "work_queues:worker": "node src/work_queues/worker.js",
+    "work_queues:send": "node src/work_queues/new_task.js",
+    "publish": "node src/publish_subscribe/emit_log.js",
+    "subscribe": "node src/publish_subscribe/receive_logs.js",
+    "routing:emit": "node src/routing/emit_log_direct.js",
+    "routing:receive": "node src/routing/receive_logs_direct.js",
+    "topics:emit": "node src/topics/emit_log_topic.js",
+    "topics:receive": "node src/topics/receive_logs_topic.js",
+    "rpc:server": "node src/rpc/rpc_server.js",
+    "rpc:client": "node src/rpc/rpc_client.js",
+    "receive_stream": "node src/stream_queues/receive_stream.js",
+    "send_stream": "node src/stream_queues/send_stream.js",
+    "cleanup:send": "node src/cleanup_expired/send_message.js",
+    "cleanup:clean": "node src/cleanup_expired/cleanup_expired_messages.js",
+    "cleanup:all": "node src/cleanup_expired/remove_all_messages.js",
+    "headers": "node src/headers.js",
+    "waitForConfirms": "node src/waitForConfirms.js",
+    "direct_reply_to_server": "node src/direct_reply_to_server",
+    "direct_reply_to_client": "node src/direct_reply_to_client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  }
+}
