@@ -34,6 +34,9 @@ const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5672';
     queue,
     (message) => {
       console.log(message.content.toString());
+      if (message.properties.headers) {
+        console.log('Headers:', message.properties.headers);
+      }
     },
     { noAck: true }
   );
@@ -48,6 +51,9 @@ const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5672';
     myNewQueue,
     (message) => {
       console.log(message.content.toString());
+      if (message.properties.headers) {
+        console.log('Headers:', message.properties.headers);
+      }
     },
     { noAck: true }
   );
