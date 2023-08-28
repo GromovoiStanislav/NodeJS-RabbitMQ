@@ -14,3 +14,4 @@
 - 12 - RabbitMQ witn Express simple Microservice (JS)
 - 13 - RabbitMQ official examples (JS) \*
 - 14 - RabbitMQ gateway-microservice (JS)
+- 15 - Minimum example of working with rabbitmq (TS)
