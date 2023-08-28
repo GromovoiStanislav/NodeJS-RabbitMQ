@@ -13,3 +13,4 @@
 - 11 - NodeJS RabbitMQ RPC (TS)
 - 12 - RabbitMQ witn Express simple Microservice (JS)
 - 13 - RabbitMQ official examples (JS) \*
+- 14 - RabbitMQ gateway-microservice (JS)
