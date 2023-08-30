@@ -1,5 +1,6 @@
 ## RabbitMQ examples
 
+- 0 - Minimum example of working with rabbitmq (JS)
 - 1 - RabbitMQ witn Express simple example
 - 2 - RabbitMQ witn Express simple example
 - 3 - RabbitMQ simple example
