@@ -29,8 +29,8 @@ npm run rpc:client 30
 ### Exchange fanout
 
 ```
-npm run pub_sub:receive
-npm run pub_sub:emit message
+npm run fanout:receive
+npm run fanout:emit message
 ```
 
 ### Exchange headers
