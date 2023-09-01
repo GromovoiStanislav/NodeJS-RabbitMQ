@@ -18,3 +18,4 @@
 - 15 - Minimum example of working with rabbitmq (TS)
 - 16 - Ecommerce-microservice (JS)
 - 17 - RabbitMQ examples (JS) \*
+- 18 - RabbitMQ callback-api examples (JS) \*
