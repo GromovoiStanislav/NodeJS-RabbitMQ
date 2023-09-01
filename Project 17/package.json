@@ -1,0 +1,30 @@
+{
+  "name": "rabbit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "headers:emit": "node headers/emit",
+    "headers:all": "node headers/receive_all",
+    "headers:any": "node headers/receive_any",
+    "pub_sub:receive": "node pub_sub/receive",
+    "pub_sub:emit": "node pub_sub/emit",
+    "hello:recieve": "node hello_world/recieve",
+    "hello:send": "node hello_world/send",
+    "work_queues:consume": "node work_queues/consume",
+    "work_queues:send": "node work_queues/send",
+    "rpc:server": "node rpc/server",
+    "rpc:client": "node rpc/client",
+    "direct:emit": "node direct/emit",
+    "direct:receive": "node direct/receive",
+    "topic:emit": "node topic/emit",
+    "topic:receive": "node topic/receive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  }
+}

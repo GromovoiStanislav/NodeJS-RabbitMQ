@@ -17,3 +17,4 @@
 - 14 - RabbitMQ gateway-microservice (JS)
 - 15 - Minimum example of working with rabbitmq (TS)
 - 16 - Ecommerce-microservice (JS)
+- 17 - RabbitMQ examples (JS) \*
