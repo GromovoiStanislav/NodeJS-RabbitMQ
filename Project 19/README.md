@@ -3,6 +3,10 @@
 ### Example simple queues
 
 ```
+npm start
+```
+
+```
 npm run hello:consume
 npm run hello:produce
 ```

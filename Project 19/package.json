@@ -4,6 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "start": "node start/index",
     "hello:consume": "node hello_world/consumer",
     "hello:produce": "node hello_world/producer",
     "work_queues:consume": "node work_queues/consumer",
