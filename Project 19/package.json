@@ -1,0 +1,22 @@
+{
+  "name": "rabbit",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "hello:consume": "node hello_world/consumer",
+    "hello:produce": "node hello_world/producer",
+    "work_queues:consume": "node work_queues/consumer",
+    "work_queues:produce": "node work_queues/producer",
+    "stream:consume": "node stream/consumer",
+    "stream:produce": "node stream/producer"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudamqp/amqp-client": "^3.1.1",
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  }
+}

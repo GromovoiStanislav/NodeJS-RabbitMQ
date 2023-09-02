@@ -19,3 +19,4 @@
 - 16 - Ecommerce-microservice (JS)
 - 17 - RabbitMQ examples (JS) \*
 - 18 - RabbitMQ callback-api examples (JS) \*
+- 19 - Examples with @cloudamqp/amqp-client (JS) \*
