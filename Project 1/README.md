@@ -1,1 +1,1 @@
-## RabbitMQ witn Express simple example
+## RabbitMQ with Express simple example

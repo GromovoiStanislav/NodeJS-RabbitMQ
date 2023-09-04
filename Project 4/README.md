@@ -1,4 +1,4 @@
-## RabbitMQ (exchange) witn NestJS, Express, simple
+## RabbitMQ (exchange) with NestJS, Express, simple
 
 IPC - Inter Process Communications (межпроцессное взаимодействие)
 
