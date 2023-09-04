@@ -22,3 +22,4 @@
 - 19 - Examples with @cloudamqp/amqp-client (JS) \*
 - 20 - Minimum example of working with amqplib/callback_api
 - 21 - RabbitMQ with Express (JS)
+- 22 - Example with amqplib/callback_api and createConfirmChannel (JS)
