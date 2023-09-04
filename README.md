@@ -23,3 +23,4 @@
 - 20 - Minimum example of working with amqplib/callback_api
 - 21 - RabbitMQ with Express (JS)
 - 22 - Example with amqplib/callback_api and createConfirmChannel (JS)
+- 23 - consumerTag example (JS)
