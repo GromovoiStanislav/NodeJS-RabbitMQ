@@ -2,6 +2,7 @@ require('dotenv').config();
 const amqp = require('amqplib/callback_api');
 const amqpUrl = process.env.AMQP_URL || 'amqp://localhost:5672';
 
+const { basename } = require('node:path');
 const { randomUUID } = require('node:crypto');
 
 const queueName = 'rpc_queue';
