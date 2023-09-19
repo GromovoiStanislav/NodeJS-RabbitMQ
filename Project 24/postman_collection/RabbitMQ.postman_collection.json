@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "fib",
+			"name": "fib?number=30",
 			"request": {
 				"auth": {
 					"type": "noauth"
