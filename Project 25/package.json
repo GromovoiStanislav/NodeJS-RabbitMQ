@@ -1,0 +1,19 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "WS",
+  "repository": "none",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.14.1"
+  },
+  "scripts": {
+    "start:server": "node server.js",
+    "start:client": "node client.js",
+    "start:producer": "node producer.js"
+  }
+}

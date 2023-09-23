@@ -25,3 +25,4 @@
 - 22 - Example with amqplib/callback_api and createConfirmChannel (JS)
 - 23 - consumerTag example (JS)
 - 24 - Express app with RabbitMQ microservice example (JS)
+- 25 - Example of notifications with RabbitMQ and WS with JWT (JS)
