@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.io Client</title>
+  </head>
+  <body>
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script>
+      // Подключение к сокету
+      const socket = io('http://localhost:3000');
+
+      // Обработка события нового сообщения
+      socket.on('new_message', (message) => {
+        console.log('New message:', message);
+        // Обработайте новое сообщение, как вам нужно
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "rabbit-socket",
+  "version": "1.0.0",
+  "description": "rabbit-socket",
+  "repository": "none",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "client": "node client.js"
+  }
+}

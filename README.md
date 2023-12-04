@@ -26,3 +26,4 @@
 - 23 - consumerTag example (JS)
 - 24 - Express app with RabbitMQ microservice example (JS)
 - 25 - Example of notifications with RabbitMQ and WS with JWT (JS)
+- 26 - Real-Time Applications with Socket.io, Express, and RabbitMQ (JS)
