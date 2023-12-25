@@ -34,17 +34,17 @@ async function sendMessage() {
     deadLetterExchange: 'dead_letter_exchange', // Обмен для отложенных сообщений
     deadLetterRoutingKey: 'dead_letter_routing_key', // Маршрут для отложенных сообщений
 
-    // messageTtl: 1000 * 60, // Установка TTL сообщений по умолчанию
+    // messageTtl: 1000 * 60, // Установка TTL сообщений по умолчанию в миллисекундах (60 секунд)
     // Или:
     arguments: {
-      'x-message-ttl': 1000 * 60, // Установка TTL сообщений по умолчанию
+      'x-message-ttl': 1000 * 60, // Установка TTL сообщений по умолчанию в миллисекундах (60 секунд)
     },
   });
 
   const message = 'Hello, RabbitMQ!';
 
   // Установка TTL для конкретного сообщения
-  const expirationTimeInMillis = 1000 * 10; // Время жизни сообщения в миллисекундах (например, 10 секунд)
+  const expirationTimeInMillis = 1000 * 20; // Установка TTL конкретного сообщения в миллисекундах (20 секунд)
   channel.sendToQueue(mainQueue, Buffer.from(message), {
     expiration: expirationTimeInMillis,
   });
