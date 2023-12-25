@@ -29,3 +29,4 @@
 - 26 - Real-Time Applications with Socket.io, Express, and RabbitMQ (JS)
 - 27 - RabbitMQ TTL example (JS)
 - 28 - RabbitMQ TTL and Dead Letter Queue example (JS)
+- 29 - RabbitMQ AlternateExchange example (JS)

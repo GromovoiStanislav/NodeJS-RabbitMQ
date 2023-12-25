@@ -1,0 +1,16 @@
+{
+  "name": "amqplib-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "example-1": "node example-1.js",
+    "example-2": "node example-2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  }
+}
