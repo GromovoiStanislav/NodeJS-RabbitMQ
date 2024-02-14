@@ -1,0 +1,19 @@
+###
+POST http://localhost:3000/operate
+Content-Type: application/json
+
+{
+    "operation": "sum",
+    "num1": 4,
+    "num2": 7
+}
+
+###
+POST http://localhost:3000/operate
+Content-Type: application/json
+
+{
+    "operation": "multiply",
+    "num1": 4,
+    "num2": 7
+}

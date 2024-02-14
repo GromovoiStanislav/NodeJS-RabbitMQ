@@ -1,0 +1,21 @@
+{
+  "name": "rpc_server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "start": "node ./dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1",
+    "typescript": "^5.1.6"
+  }
+}

@@ -30,3 +30,4 @@
 - 27 - RabbitMQ TTL example (JS)
 - 28 - RabbitMQ TTL and Dead Letter Queue example (JS)
 - 29 - RabbitMQ AlternateExchange example (JS)
+- 30 - Microservice with rabbitmq (TS)
