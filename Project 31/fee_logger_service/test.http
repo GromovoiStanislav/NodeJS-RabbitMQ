@@ -1,0 +1,30 @@
+@url = http://localhost:3001/fee-log
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "feeType": "Acceptance",
+    "message": "Message for Acceptance"
+}
+
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "feeType": "Hostel",
+    "message": "Message for Hostel"
+}
+
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "feeType": "School",
+    "message": "Message for School"
+}
