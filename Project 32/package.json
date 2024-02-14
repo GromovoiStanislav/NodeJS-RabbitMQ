@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "consumer": "node consumer.js",
+    "consumer-fanout": "node consumer-fanout.js",
+    "consumer-topic": "node consumer-topic.js",
     "producer": "node producer.js"
   },
   "keywords": [],

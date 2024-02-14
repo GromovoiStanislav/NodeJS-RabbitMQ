@@ -1,5 +1,8 @@
 @url = http://localhost:3000/order
 
+###
+POST {{url}}/add
+
 
 ###
-POST {{url}}
+POST {{url}}/process

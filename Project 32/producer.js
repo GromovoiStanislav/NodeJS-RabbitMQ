@@ -20,13 +20,23 @@ const connectRabbitMQ = async () => {
 
 let count = 1;
 
-app.post('/order', async (req, res) => {
+app.post('/order/add', async (req, res) => {
   const newOrder = {
     id: randomUUID(),
     title: `Order # ${count++}`,
   };
 
   channel.publish('', 'order.add', Buffer.from(JSON.stringify(newOrder)));
+  res.status(201).json(newOrder);
+});
+
+app.post('/order/process', async (req, res) => {
+  const newOrder = {
+    id: randomUUID(),
+    title: `Order # ${count++}`,
+  };
+
+  channel.publish('', 'order.process', Buffer.from(JSON.stringify(newOrder)));
   res.status(201).json(newOrder);
 });
 
