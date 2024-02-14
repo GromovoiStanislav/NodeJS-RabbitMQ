@@ -1,9 +1,8 @@
 require('dotenv').config();
 const express = require('express');
-const Producer = require('./producer');
+const producer = require('./producer');
 
 const app = express();
-const producer = new Producer();
 
 app.use(express.json());
 

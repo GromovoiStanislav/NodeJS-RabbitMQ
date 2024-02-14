@@ -6,7 +6,15 @@ const rabbitMQ = {
 };
 
 class Producer {
+  static instance;
   channel;
+
+  static getInstance() {
+    if (!this.instance) {
+      this.instance = new Producer();
+    }
+    return this.instance;
+  }
 
   async createChannel() {
     const connection = await amqp.connect(rabbitMQ.url);
@@ -38,4 +46,4 @@ class Producer {
   }
 }
 
-module.exports = Producer;
+module.exports = Producer.getInstance();
