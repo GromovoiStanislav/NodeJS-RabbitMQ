@@ -33,3 +33,4 @@
 - 30 - Microservice with rabbitmq (TS)
 - 31 - Microservices with rabbitmq (JS)
 - 32 - RabbitMQ DLX (Dead Letter Exchange) example (JS)
+- 33 - RabbitMQ with ExpressJS example (TS)
