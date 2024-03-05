@@ -1,0 +1,11 @@
+@api = http://localhost:3000
+
+###
+POST  {{api}}/orders
+Content-Type: application/json
+
+{
+    "msg": "Hello"
+}
+
+
