@@ -2,5 +2,5 @@
 
 ```
 npm run consumer
-npm run producer
+npm run publisher
 ```
