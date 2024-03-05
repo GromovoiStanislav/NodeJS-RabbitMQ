@@ -1,0 +1,16 @@
+{
+  "name": "publish-subscribe-rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "pub": "node pub.js",
+    "sub": "node sub.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "dotenv": "^16.3.1"
+  }
+}
