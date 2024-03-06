@@ -1,0 +1,1 @@
+## RabbitMQ with NestJS implementation example (JS)
