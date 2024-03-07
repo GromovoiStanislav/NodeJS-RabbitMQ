@@ -1,1 +1,1 @@
-## RabbitMQ with NestJS and ExpressJS implementation example (JS)
+## RabbitMQ with NestJS and ExpressJS implementation example (TS)
