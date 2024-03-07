@@ -38,4 +38,5 @@
 - 35 - RabbitMQ DLX (Dead Letter Exchange) example (JS)
 - 36 - RabbitMQ DLX (Dead Letter Exchange) example (JS)
 - 37 - RabbitMQ with ExpressJS example (TS)
-- 38 - RabbitMQ with NestJS implementation example (JS)
+- 38 - RabbitMQ with NestJS implementation example
+- 39 - RabbitMQ with NestJS and ExpressJS implementation example (TS)

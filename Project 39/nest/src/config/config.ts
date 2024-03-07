@@ -13,8 +13,8 @@ export default () => ({
       paymentsRequestQueue: "paymentsRequestQueue",
       cyberSourceRequestQueue: "cyberSourceRequestQueue",
       mpgsRequestQueue: "mpgsRequestQueue",
-      testRequestQueue: "testRequestQueue",
-      test2RequestQueue: "test2RequestQueue"
+      testRequestQueue: "testRequestdQueue",
+      test2RequestQueue: "test2RequestdQueue"
     }
   }
 });

@@ -1,0 +1,16 @@
+
+###
+POST  http://localhost:3000/nest
+Content-Type: application/json
+
+{
+    "msg": "Hello Nest"
+}
+
+###
+POST http://localhost:3001/express
+content-type: application/json
+
+{
+    "msg": "Hello Express"
+}

@@ -1,4 +1,4 @@
-import { Connection, Channel, connect, Message } from "amqplib";
+import { Connection, Channel, connect, Message } from 'amqplib';
 
 export default class RabbitmqServer {
   private conn: Connection;
