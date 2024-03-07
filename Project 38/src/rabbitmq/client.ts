@@ -39,6 +39,7 @@ export default class RabbitMQClient {
         }
       );
 
+      //Create test queue
       const { queue: requestQueueName } =
         await this.consumerChannel.assertQueue(
           this.config.get("rabbitMQ.queues.testRequestQueue"),
@@ -46,6 +47,14 @@ export default class RabbitMQClient {
             durable: true
           }
         );
+
+      //Create test2 queue
+      await this.consumerChannel.assertQueue(
+        this.config.get("rabbitMQ.queues.test2RequestQueue"),
+        {
+          durable: true
+        }
+      );
 
       //Create the producer and consumer
       this.producer = new Producer(
@@ -60,7 +69,7 @@ export default class RabbitMQClient {
         this.eventEmitter,
         requestQueueName,
         replyQueueName,
-      this.producer
+        this.producer
       );
 
       //Run consumers
@@ -99,9 +108,14 @@ export default class RabbitMQClient {
     );
   }
 
+  getConsumerChannel() {
+    return this.consumerChannel;
+  }
+
+
   async closeConnection() {
     try {
-      this.connection.close();
+      await this.connection.close();
     } catch (error) {
       this.logger.error(`RabbitMQ error:  ${error}`);
     }

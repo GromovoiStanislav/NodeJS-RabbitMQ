@@ -13,7 +13,7 @@ export default class Consumer {
   }
 
   consumeMessages() {
-    //Consume the reply message that arrives on the reply queue
+    //Consume the reply message that arrives on the queue
     this.channel.consume(
       this.replyQueue,
       (message) => {
@@ -28,30 +28,30 @@ export default class Consumer {
       }
     );
 
-    //Consume the messages that arrives on the request queue
-    this.channel.consume(
-      this.requestQueueName,
-      (message) => {
-        //TODO: Create switch case to perform different functions
+    // //Consume the messages that arrives on the queue
+    // this.channel.consume(
+    //   this.requestQueueName,
+    //   (message) => {
+    //     //TODO: Create switch case to perform different functions
+    //
+    //     console.log("consume requestQueueName", JSON.parse(message.content.toString()));
+    //
+    //     // this.eventEmitter.emit(
+    //     //   message.properties.correlationId.toString(),
+    //     //   message
+    //     // );
+    //
+    //     this.producer.publishMessage(
+    //       JSON.parse(message.content.toString()),
+    //       this.replyQueue,
+    //       message.properties.correlationId.toString()
+    //     );
+    //
+    //   },
+    //   {
+    //     noAck: true
+    //   }
+    // );
 
-        console.log("consume requestQueueName", JSON.parse(message.content.toString()));
-
-        // this.eventEmitter.emit(
-        //   message.properties.correlationId.toString(),
-        //   message
-        // );
-
-        this.producer.publishMessage(
-          JSON.parse(message.content.toString()),
-          this.replyQueue,
-          message.properties.correlationId.toString()
-        );
-
-
-      },
-      {
-        noAck: true
-      }
-    );
   }
 }

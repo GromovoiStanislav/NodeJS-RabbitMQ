@@ -4,6 +4,7 @@ import { AppService } from "./app.service";
 import { ConfigModule } from "@nestjs/config";
 import config from "./config/config";
 import { GlobalModule } from "./global.module";
+import { AnyModule } from './any/any.module';
 
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import { GlobalModule } from "./global.module";
       cache: true,
       load: [config]
     }),
-    GlobalModule
+    GlobalModule,
+    AnyModule
   ],
   controllers: [AppController],
   providers: [AppService]

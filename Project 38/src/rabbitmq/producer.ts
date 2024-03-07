@@ -40,7 +40,7 @@ export default class Producer {
       //rabbitOptions.expiration = this.config.get("rabbitMQ.messageExpiration");
     }
 
-   this.channel.sendToQueue(
+    this.channel.sendToQueue(
       queueName,
       Buffer.from(JSON.stringify(data)),
       rabbitOptions

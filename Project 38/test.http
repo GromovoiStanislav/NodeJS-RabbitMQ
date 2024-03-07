@@ -2,5 +2,8 @@
 
 
 ###
-GET {{api}}
+POST  {{api}}/test
 
+
+###
+POST  {{api}}/test2

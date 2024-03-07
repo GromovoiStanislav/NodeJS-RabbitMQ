@@ -11,15 +11,16 @@ export class AppService {
   ) {
   }
 
-
-  async getHello(correlationId: string) {
-    // this.rabbitMQClient.produce({ msg: "Hello" }, this.config.get("rabbitMQ.queues.testRequestQueue"), correlationId)
-
+  async test(correlationId: string) {
     // this.rabbitMQClient.produce({ msg: "Hello" }, this.config.get("rabbitMQ.queues.testRequestQueue"), correlationId,true)
     //   .then(response=>response().then(reply=>console.log('AppService',reply)))
 
-    const reply = await (await this.rabbitMQClient.produce({ msg: "Hello" }, this.config.get("rabbitMQ.queues.testRequestQueue"), correlationId,true))()
-
-    return reply;
+    return await (await this.rabbitMQClient.produce({ msg: "Hello" }, this.config.get("rabbitMQ.queues.testRequestQueue"), correlationId, true))();
   }
+
+  async test2(correlationId: string) {
+    this.rabbitMQClient.produce({ msg: "Hello" }, this.config.get("rabbitMQ.queues.test2RequestQueue"), correlationId);
+    return "OK";
+  }
+
 }
