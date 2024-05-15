@@ -1,5 +1,5 @@
 import {Module} from '@nestjs/common';
-import {AmqpConnection, RabbitMQModule} from "@golevelup/nestjs-rabbitmq";
+import {RabbitMQModule} from "@golevelup/nestjs-rabbitmq";
 import * as process from "process";
 import {MessagingService} from "./messaging.service";
 import {MessagingController} from "./messaging.controller";

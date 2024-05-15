@@ -42,3 +42,4 @@
 - 39 - RabbitMQ with NestJS and ExpressJS implementation example (TS)
 - 40 - RabbitMQ (@golevelup/nestjs-rabbitmq) example
 - 41 - RabbitMQ (@golevelup/nestjs-rabbitmq) example
+- 42 - RabbitMQ (@golevelup/nestjs-rabbitmq) example
